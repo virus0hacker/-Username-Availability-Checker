@@ -15,7 +15,6 @@ A simple, open-source GUI tool to check **username availability** across major s
 * **Twitter / X**
 * **Instagram**
 * **Telegram**
-* *(Discord not publicly checkable without API — marked as Unknown)*
 
 The tool is safe, fast, and designed for everyday use without login or API keys.
 It uses HTTP requests to test the existence of public profile URLs and infers availability using HTTP status codes.
@@ -61,7 +60,6 @@ Each platform is checked using its public profile URL pattern:
 | Instagram | [https://instagram.com/{username}/](https://instagram.com/{username}/)             | GET    | 200 → Taken, 404 → Available |
 | Telegram  | [https://t.me/{username}](https://t.me/{username})                                 | GET    | 200 → Taken, 404 → Available |
 | Snapchat  | [https://www.snapchat.com/add/{username}](https://www.snapchat.com/add/{username}) | GET    | Uses text & status check     |
-| Discord   | —                                                                                  | —      | Not checkable via URL        |
 
 The app respects delays between requests (configurable) to avoid rate limits.
 
@@ -76,8 +74,7 @@ The app respects delays between requests (configurable) to avoid rate limits.
     "Twitter": {"verdict": "taken"},
     "Instagram": {"verdict": "available"},
     "Telegram": {"verdict": "taken"},
-    "Snapchat": {"verdict": "available"},
-    "Discord": {"verdict": "unknown"}
+    "Snapchat": {"verdict": "available"}
   }
 }
 ```
