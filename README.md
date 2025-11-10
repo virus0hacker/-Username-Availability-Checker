@@ -1,4 +1,4 @@
-# Username Availability Checker — GitHub Release Pack
+Username Availability Checker — GitHub Release Pack
 
 **Project name:** Username Availability Checker
 **Author:** ml-ftt
