@@ -1,7 +1,7 @@
-Username Availability Checker
-
 **Project name:** Username Availability Checker
+
 **Author:** ViRuS-HaCkEr
+
 **Interface:** GUI (Tkinter)
 
 ---
