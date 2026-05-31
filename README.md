@@ -42,8 +42,8 @@ It uses HTTP requests to test the existence of public profile URLs and infers av
 
 ## 💻 Installation :
 
-```bash
 pip install requests
+```bash
 python username_availability_checker.py
 ```
 
